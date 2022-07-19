@@ -16,7 +16,6 @@ body{
 }
 .nav-section{
     display:flex;
-  
     justify-content: space-between;
     align-items: center;
 
@@ -121,12 +120,9 @@ main{
     grid-row-gap: 10px;
 }
 .image-box{
- 
     background-color: aliceblue;
     border-radius: 5px;
     padding: 10px;
-    
-
    
 }
 .image-box img{
@@ -149,4 +145,104 @@ main{
 .text-icon .fa-arrow-right-long{
     color: red;
 }
+.two-part{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 341px;
+    grid-column-gap: 100px;
+    margin-bottom: 30px;
+}
+.part-1 img{
+    width: 100%;
+}
+.part-2 h3{
+    font-weight: 600;
+
+}
+.part-2 p{
+    font-weight: 400;
+    font-size: 16px;
+}
+.part-2 a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
 /* main area end */
+
+/* footer start  */
+footer{
+    background: #000;
+    color: white;
+    height: 300px;
+}
+.footer-text{
+    margin-top: 70px;
+    display: inline-block;
+}
+
+/* footer end  */
+/* media  */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+        margin: 0 0;
+    }
+    .left-side a{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+        color: #3A3A3A;
+       
+    }
+    .right-side a{
+        font-size: 10px;
+        font-weight: 700;
+      
+    }
+    .influencer{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .button{
+        margin-left: 120px;
+    }
+
+    .amazon{
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: none;
+        border-bottom: none;
+        padding: 0;
+        margin-left: 0;
+        grid-row-gap:30px;
+       
+    }
+    .amazon img{
+        width: 80px;
+    }
+
+    main{
+    width: 100%;
+   
+   }
+
+   .image-boxes{
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+}
+.image-box{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+   
+}
+    
+}
